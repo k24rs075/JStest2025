@@ -21,24 +21,24 @@
             });
             
             function main() {
-                let a = [10, 50, 30];
-                a.push(40);
-                a.unshift(0);
-                let msg="";
-                for(let i=0; i<a.length; i++) {
-                    msg += i + ":" + a[i] + "<br>";
+                let txt1 = "";
+                let pointA = [5, 2];
+                txt1 += "x:" + pointA[0] + ",y:" + pointA[1] + "<br>";
+                for(let i=0; i<pointA.length; i++) {
+                    pointA[i]+=5;
                 }
-                $("#disp1").html(msg);
-                let p = a.pop();
-                let s = a.shift();
-                let msg2="";
-                for(let i=0; i<a.length; i++) {
-                    msg2 += i + ":" + a[i] + "<br>";
+                txt1 += "x:" + pointA[0] + ",y:" + pointA[1] + "<br>";
+                $("#disp1").html(txt1);
+                let txt2 = "";
+                let pointH = {x:5, y:2};
+                txt2 += "x:" + pointH["x"] +
+                ",y:" + pointH["y"] + "<br>";
+                for(let key in pointH) {
+                    pointH[key]+=5;
                 }
-                msg2 += "p:" + p + "<br>";
-                msg2 += "s:" + s + "<br>";
-                $("#disp2").html(msg2);
-                }
+                txt2 += "x:" + pointH["x"] + ",y:" + pointH["y"] + "<br>";
+                $("#disp2").html(txt2);
+            }
         </script>
     </head>
 
