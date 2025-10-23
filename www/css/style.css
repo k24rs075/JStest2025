@@ -1,7 +1,7 @@
 /**/
 
 html,body {
-  background: skyblue;
+  background: darkblue;
   height: 100%;
 }
 
@@ -11,11 +11,11 @@ html,body {
   padding: 10px;
   margin: 5px;
   height: 40%;
-  background: white;
+  background: lemonchiffon;
 }
 
 #btn {
-  font-size: 2em;
+  font-size: 3em;
 }
 
 #btn::after {
